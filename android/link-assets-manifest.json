@@ -1,0 +1,21 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/fonts/EduTASBeginner-Bold.ttf",
+      "sha1": "8acaf816c2b5c94b80268bf973b5ee7723c32bdc"
+    },
+    {
+      "path": "assets/fonts/EduTASBeginner-Medium.ttf",
+      "sha1": "cab5a23fa5b27deca05d2cecfe4e8b046af0af23"
+    },
+    {
+      "path": "assets/fonts/EduTASBeginner-Regular.ttf",
+      "sha1": "01e9882504e1e3b356aa6dc92b29a54aea4597f4"
+    },
+    {
+      "path": "assets/fonts/EduTASBeginner-SemiBold.ttf",
+      "sha1": "92b4d2a04a0cac88a9a1e871b335b333d21ddd3a"
+    }
+  ]
+}

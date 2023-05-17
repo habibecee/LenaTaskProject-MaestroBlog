@@ -13,19 +13,19 @@ import {colors, fonts} from '../../utils/GeneralStyles';
 const Blog = ({route, navigation}) => {
   const {blogPosts} = useContext(MainContext);
   const blogId = route.params.blogId;
-  const blog = blogPosts?.find(blog => blog.postId === blogId);
+  const blog = blogPosts?.find(blog => blog?.postId === blogId);
   const {width} = useWindowDimensions();
 
   useEffect(() => {
     navigation.setOptions({
-      title: <Text style={styles.subText}>{blog.title}</Text>,
+      title: <Text style={styles.subText}>{blog?.title}</Text>,
     });
   }, [blog]);
 
   return (
     <SafeAreaView>
       <ScrollView style={styles.content}>
-        <RenderHTML source={{html: blog.content}} contentWidth={width} />
+        <RenderHTML source={{html: blog?.content}} contentWidth={width} />
       </ScrollView>
     </SafeAreaView>
   );

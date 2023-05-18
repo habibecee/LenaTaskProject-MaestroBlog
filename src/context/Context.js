@@ -1,16 +1,11 @@
-import axios from 'axios';
-import React, {
-  createContext,
-  useCallback,
-  useContext,
-  useEffect,
-  useState,
-} from 'react';
+import React, {createContext, useCallback, useContext, useState} from 'react';
 
 const MainContext = createContext();
 
 const MainContextProvider = ({children}) => {
+  const perCount = 10;
   const [blogPosts, setBlogPosts] = useState([]);
+  const [lastPost, setLastPost] = useState(null);
   const [refreshing, setRefreshing] = useState(false);
   const [page, setPage] = useState(1);
 
@@ -18,7 +13,7 @@ const MainContextProvider = ({children}) => {
     const nextPage = page + 1;
 
     fetch(
-      `https://www.lenasoftware.com/api/v1/en/maestro/1?page=${nextPage}&count=10`,
+      `https://www.lenasoftware.com/api/v1/en/maestro/1?page=${nextPage}&count=${perCount}`,
     )
       .then(response => response.json())
       .then(data => {
@@ -32,16 +27,6 @@ const MainContextProvider = ({children}) => {
       });
   };
 
-  const handleScroll = ({nativeEvent}) => {
-    const {layoutMeasurement, contentOffset, contentSize} = nativeEvent;
-    const isEndReached =
-      layoutMeasurement.height + contentOffset.y >= contentSize.height;
-
-    if (isEndReached) {
-      loadMoreBlogPosts();
-    }
-  };
-
   const onRefresh = useCallback(() => {
     setRefreshing(true);
     setTimeout(() => {
@@ -50,29 +35,26 @@ const MainContextProvider = ({children}) => {
   }, []);
 
   const fetchBlogPosts = () => {
-    fetch('https://www.lenasoftware.com/api/v1/en/maestro/1')
+    fetch(`https://www.lenasoftware.com/api/v1/en/maestro/1`)
       .then(response => response.json())
       .then(data => {
         setBlogPosts(data.result);
+        setLastPost(data.result[0]);
       })
       .catch(error => {
         console.error('ERROR:', error);
       });
   };
 
-  useEffect(() => {
-    fetchBlogPosts();
-    loadMoreBlogPosts();
-  }, []);
-
   return (
     <MainContext.Provider
       value={{
         blogPosts,
+        lastPost,
         refreshing,
         onRefresh,
-        handleScroll,
         loadMoreBlogPosts,
+        fetchBlogPosts,
         page,
       }}>
       {children}

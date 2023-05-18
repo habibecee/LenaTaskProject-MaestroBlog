@@ -1,13 +1,15 @@
 export const colors = {
   dark: '#051367',
   light: '#DBDFEA',
-  primary: '#2D31FA',
-  secondary: '#5D8BF4',
+  primary: '#9CB4CC',
+  secondary: '#3C486B',
+  warn: '#3F0071',
 
   textDark: '#27296D',
   textLight: '#BDCDD6',
   textPrimary: '#5E63B6',
   textSecondary: '#A393EB',
+  textLast: '#7882A4',
 
   borderDark: '#484C7F',
   borderLight: '#F1D4D4',

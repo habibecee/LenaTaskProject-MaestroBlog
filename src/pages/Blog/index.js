@@ -1,50 +1,41 @@
 import {
   Text,
-  StyleSheet,
   SafeAreaView,
   ScrollView,
   useWindowDimensions,
+  Image,
+  View,
 } from 'react-native';
 import React, {useContext, useEffect} from 'react';
 import {RenderHTML} from 'react-native-render-html';
 import {MainContext} from '../../context/Context';
-import {colors, fonts} from '../../utils/GeneralStyles';
+import {styles} from './styles';
 
 const Blog = ({route, navigation}) => {
+  const {width} = useWindowDimensions();
   const {blogPosts} = useContext(MainContext);
   const blogId = route.params.blogId;
-  const blog = blogPosts?.find(blog => blog?.postId === blogId);
-  const {width} = useWindowDimensions();
+  const blog = blogPosts?.find(blogPost => blogPost?.postId === blogId);
 
   useEffect(() => {
     navigation.setOptions({
       title: <Text style={styles.subText}>{blog?.title}</Text>,
     });
-  }, [blog]);
+  }, [navigation, blog]);
 
   return (
-    <SafeAreaView>
+    <SafeAreaView style={styles.container}>
       <ScrollView style={styles.content}>
-        <RenderHTML source={{html: blog?.content}} contentWidth={width} />
+        <Image source={{uri: blog?.banner}} style={styles.postImage} />
+        <View style={styles.renderHTML}>
+          <RenderHTML
+            source={{html: blog?.content}}
+            contentWidth={width - 20}
+          />
+        </View>
       </ScrollView>
     </SafeAreaView>
   );
 };
-
-const styles = StyleSheet.create({
-  subText: {
-    position: 'relative',
-    fontFamily: fonts.bold,
-    fontSize: 18,
-    textAlign: 'center',
-    marginVertical: 10,
-  },
-
-  content: {
-    backgroundColor: colors.light,
-    borderRadius: 10,
-    padding: 15,
-  },
-});
 
 export default Blog;

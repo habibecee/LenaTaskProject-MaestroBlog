@@ -1,5 +1,4 @@
 import React from 'react';
-// import 'react-native-gesture-handler';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import {MainContextProvider} from './src/context/Context';
@@ -7,7 +6,8 @@ import Blogs from './src/pages/Blogs';
 import Blog from './src/pages/Blog';
 import Icon from 'react-native-vector-icons/Ionicons';
 import {TouchableOpacity} from 'react-native';
-import {Logo} from './src/companents/svg';
+import {Logo} from './src/components/svg';
+import {colors} from './src/utils/GeneralStyles';
 
 const Stack = createStackNavigator();
 
@@ -34,7 +34,11 @@ function App() {
                       onPress={() => navigation.navigate('Blogs')}
                       px={20}
                       height="100%">
-                      <Icon name="chevron-back-sharp" color="gray" size={24} />
+                      <Icon
+                        name="chevron-back-sharp"
+                        color={colors.textDark}
+                        size={24}
+                      />
                     </TouchableOpacity>
                   );
                 },

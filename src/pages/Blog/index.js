@@ -5,6 +5,7 @@ import {
   useWindowDimensions,
   Image,
   View,
+  TouchableOpacity,
 } from 'react-native';
 import React, {useContext, useEffect} from 'react';
 import {RenderHTML} from 'react-native-render-html';
@@ -26,8 +27,39 @@ const Blog = ({route, navigation}) => {
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView style={styles.content}>
-        <Image source={{uri: blog?.banner}} style={styles.postImage} />
+        <Image
+          alt={blog?.imageAlt}
+          source={{uri: blog?.image}}
+          style={styles.postImage}
+        />
+
+        <View style={styles.authorContainer}>
+          {blog?.users?.avatar && (
+            <TouchableOpacity>
+              <Image
+                alt={blog?.imageAlt}
+                source={{uri: blog?.users?.avatar}}
+                style={styles.avatar}
+              />
+            </TouchableOpacity>
+          )}
+          <TouchableOpacity>
+            <Text style={styles.authorText}>
+              {' '}
+              {blog?.users?.name} {blog?.users?.surname}
+            </Text>
+          </TouchableOpacity>
+        </View>
+
         <View style={styles.renderHTML}>
+          <View style={styles.postDate}>
+            <Text style={styles.postDateText}>
+              created: {blog?.createdAt.slice(0, 10)}
+            </Text>
+            <Text style={styles.postDateText}>
+              modified: {blog?.modifiedAt.slice(0, 10)}
+            </Text>
+          </View>
           <RenderHTML
             source={{html: blog?.content}}
             contentWidth={width - 20}

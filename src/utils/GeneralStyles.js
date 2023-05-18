@@ -19,8 +19,9 @@ export const colors = {
 };
 
 export const fonts = {
-  regular: 'EduTASBeginner-Regular',
-  medium: 'EduTASBeginner-Medium',
-  bold: 'EduTASBeginner-Bold',
-  semiBold: 'EduTASBeginner-SemiBold',
+  light: 'Poppins-Light',
+  regular: 'Poppins-Regular',
+  medium: 'Poppins-Medium',
+  bold: 'Poppins-Bold',
+  semiBold: 'Poppins-SemiBold',
 };

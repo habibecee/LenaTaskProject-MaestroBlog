@@ -26,7 +26,7 @@ export const styles = StyleSheet.create({
   },
   subTitle: {
     fontFamily: fonts.bold,
-    fontSize: 24,
+    fontSize: 22,
     color: colors.warn,
     textAlign: 'left',
     margin: 10,
@@ -34,27 +34,26 @@ export const styles = StyleSheet.create({
   lastPostImage: {
     width: '100%',
     height: 200,
-    marginBottom: 20,
   },
   lastPostTitleContainer: {
     padding: 15,
   },
   lastPostTitle: {
     fontFamily: fonts.bold,
-    fontSize: 20,
+    fontSize: 18,
     textAlign: 'center',
     marginVertical: 10,
     color: colors.textDark,
   },
   lastPostSummary: {
     fontFamily: fonts.regular,
-    fontSize: 18,
+    fontSize: 16,
     textAlign: 'justify',
     color: colors.dark,
   },
   lastPostTotalReadingTime: {
-    fontFamily: fonts.bold,
-    fontSize: 16,
+    fontFamily: fonts.medium,
+    fontSize: 12,
     textAlign: 'left',
     color: colors.secondary,
     marginTop: 10,
@@ -81,6 +80,7 @@ export const styles = StyleSheet.create({
   },
   listTitleContainer: {
     padding: 5,
+    gap: 5,
   },
   listTitle: {
     fontFamily: fonts.bold,
@@ -93,9 +93,19 @@ export const styles = StyleSheet.create({
     fontSize: 14,
     textAlign: 'justify',
     color: colors.dark,
+    overflow: 'hidden',
+    textOverflow: 'ellipsis',
+    whiteSpace: 'nowrap',
   },
+
+  textMore: {
+    fontFamily: fonts.medium,
+    fontSize: 14,
+    color: colors.textPrimary,
+  },
+
   listTotalReadingTime: {
-    fontFamily: fonts.semiBold,
+    fontFamily: fonts.medium,
     fontSize: 12,
     textAlign: 'left',
     color: colors.textLast,

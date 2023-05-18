@@ -6,18 +6,16 @@ import {
   TouchableOpacity,
   View,
   Image,
-  Dimensions,
   RefreshControl,
   ActivityIndicator,
 } from 'react-native';
+import ReadMore from 'react-native-read-more-text';
 import {useNavigation} from '@react-navigation/native';
 import {MainContext} from '../../context/Context';
 import {styles} from './styles';
 
 const Blogs = () => {
   const {navigate} = useNavigation();
-  const {width} = Dimensions.get('window');
-  const itemWidth = (width - 20) / 2;
 
   const {
     blogPosts,
@@ -32,6 +30,24 @@ const Blogs = () => {
     fetchBlogPosts();
   }, []);
 
+  const handlePress = () => {};
+
+  const renderTruncatedFooter = handlePress => {
+    return (
+      <Text style={styles.textMore} onPress={handlePress}>
+        See more
+      </Text>
+    );
+  };
+
+  const renderRevealedFooter = handlePress => {
+    return (
+      <Text style={styles.textMore} onPress={handlePress}>
+        See less
+      </Text>
+    );
+  };
+
   const renderLastPost = () => (
     <TouchableOpacity
       key={lastPost?.postId}
@@ -45,7 +61,7 @@ const Blogs = () => {
         <Text style={styles.lastPostTitle}>{lastPost?.title}</Text>
         <Text style={styles.lastPostSummary}>{lastPost?.summary}</Text>
         <Text style={styles.lastPostTotalReadingTime}>
-          Total Reading Time: {lastPost?.totalReadingTime}
+          Total Reading Time: {lastPost?.totalReadingTime} min
         </Text>
       </View>
     </TouchableOpacity>
@@ -66,9 +82,16 @@ const Blogs = () => {
         )}
         <View style={styles.listTitleContainer}>
           <Text style={styles.listTitle}>{item?.title}</Text>
-          <Text style={styles.listSummary}>{item?.summary}</Text>
+
+          <ReadMore
+            numberOfLines={3}
+            renderTruncatedFooter={renderTruncatedFooter}
+            renderRevealedFooter={renderRevealedFooter}
+            onReady={handlePress}>
+            <Text>{item?.summary}</Text>
+          </ReadMore>
           <Text style={styles.listTotalReadingTime}>
-            Total Reading Time: {item?.totalReadingTime}
+            Total Reading Time: {item?.totalReadingTime} min
           </Text>
         </View>
       </TouchableOpacity>

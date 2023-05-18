@@ -2,20 +2,24 @@
   "migIndex": 1,
   "data": [
     {
-      "path": "assets/fonts/EduTASBeginner-Bold.ttf",
-      "sha1": "8acaf816c2b5c94b80268bf973b5ee7723c32bdc"
+      "path": "assets/fonts/Poppins-Bold.ttf",
+      "sha1": "3bc8164396c3e6c1e4fae0cf2a51ea66381c1c2d"
     },
     {
-      "path": "assets/fonts/EduTASBeginner-Medium.ttf",
-      "sha1": "cab5a23fa5b27deca05d2cecfe4e8b046af0af23"
+      "path": "assets/fonts/Poppins-Light.ttf",
+      "sha1": "0eba831cb91221e799ba55fc1b7c1805a0799623"
     },
     {
-      "path": "assets/fonts/EduTASBeginner-Regular.ttf",
-      "sha1": "01e9882504e1e3b356aa6dc92b29a54aea4597f4"
+      "path": "assets/fonts/Poppins-Medium.ttf",
+      "sha1": "cf83e7582e60ed83f67c7d68b4f7482ac9fc6958"
     },
     {
-      "path": "assets/fonts/EduTASBeginner-SemiBold.ttf",
-      "sha1": "92b4d2a04a0cac88a9a1e871b335b333d21ddd3a"
+      "path": "assets/fonts/Poppins-Regular.ttf",
+      "sha1": "52f9413b264e8ecefbbf12830e3dfadebbf72986"
+    },
+    {
+      "path": "assets/fonts/Poppins-SemiBold.ttf",
+      "sha1": "bb68fa19e20495d26a20308b90712bd2c6150642"
     }
   ]
 }

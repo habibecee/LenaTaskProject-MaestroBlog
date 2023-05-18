@@ -12,7 +12,6 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		2CC182A2F2014B9D8EB6DC11 /* EduTASBeginner-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 057981E32CAC4ECC80074A82 /* EduTASBeginner-SemiBold.ttf */; };
 		3A79D9E62A13E4D900B03818 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3A79D9D62A13E4D800B03818 /* MaterialCommunityIcons.ttf */; };
 		3A79D9E72A13E4D900B03818 /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3A79D9D72A13E4D800B03818 /* Fontisto.ttf */; };
 		3A79D9E82A13E4D900B03818 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3A79D9D82A13E4D800B03818 /* Ionicons.ttf */; };
@@ -29,11 +28,13 @@
 		3A79D9F32A13E4D900B03818 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3A79D9E32A13E4D900B03818 /* Entypo.ttf */; };
 		3A79D9F42A13E4D900B03818 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3A79D9E42A13E4D900B03818 /* Octicons.ttf */; };
 		3A79D9F52A13E4D900B03818 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3A79D9E52A13E4D900B03818 /* Feather.ttf */; };
-		7375DCC8E3D74C7CB07BD542 /* EduTASBeginner-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB242A25E55D4634A2FBB8B1 /* EduTASBeginner-Regular.ttf */; };
+		63EECD1F9A334979ADA9BFAF /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A9D7F09EAF614D12A89A2B5B /* Poppins-Medium.ttf */; };
 		7699B88040F8A987B510C191 /* libPods-LenaTaskProject-LenaTaskProjectTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-LenaTaskProject-LenaTaskProjectTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		E0587B6A0210448E8A061108 /* EduTASBeginner-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1CE2CA0D41654923A1383FA0 /* EduTASBeginner-Bold.ttf */; };
-		F65FF287AB2F4D5991B6FD3A /* EduTASBeginner-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD8EB81DE89B4678AB56EE72 /* EduTASBeginner-Medium.ttf */; };
+		98390C6125994A2487C4C8EF /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 09B9A123A63941D8B865612E /* Poppins-Light.ttf */; };
+		9B5269C88B794A0E97FE34BA /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 157B33BFA3A8446F81DEC6E7 /* Poppins-SemiBold.ttf */; };
+		DDAF53776C864BFDB23445CA /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C04FE4CA207A4FA081FF1C2F /* Poppins-Bold.ttf */; };
+		F1994C817AE643C5899937C9 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D52AE6AEC7034066A8D7C506 /* Poppins-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,12 +52,14 @@
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* LenaTaskProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LenaTaskProjectTests.m; sourceTree = "<group>"; };
 		057981E32CAC4ECC80074A82 /* EduTASBeginner-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "EduTASBeginner-SemiBold.ttf"; path = "../assets/fonts/EduTASBeginner-SemiBold.ttf"; sourceTree = "<group>"; };
+		09B9A123A63941D8B865612E /* Poppins-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Light.ttf"; path = "../assets/fonts/Poppins-Light.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* LenaTaskProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LenaTaskProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = LenaTaskProject/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = LenaTaskProject/AppDelegate.mm; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = LenaTaskProject/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = LenaTaskProject/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = LenaTaskProject/main.m; sourceTree = "<group>"; };
+		157B33BFA3A8446F81DEC6E7 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-SemiBold.ttf"; path = "../assets/fonts/Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-LenaTaskProject-LenaTaskProjectTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LenaTaskProject-LenaTaskProjectTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CE2CA0D41654923A1383FA0 /* EduTASBeginner-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "EduTASBeginner-Bold.ttf"; path = "../assets/fonts/EduTASBeginner-Bold.ttf"; sourceTree = "<group>"; };
 		3A79D9D62A13E4D800B03818 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialCommunityIcons.ttf; sourceTree = "<group>"; };
@@ -81,8 +84,11 @@
 		5DCACB8F33CDC322A6C60F78 /* libPods-LenaTaskProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LenaTaskProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = LenaTaskProject/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-LenaTaskProject-LenaTaskProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LenaTaskProject-LenaTaskProjectTests.release.xcconfig"; path = "Target Support Files/Pods-LenaTaskProject-LenaTaskProjectTests/Pods-LenaTaskProject-LenaTaskProjectTests.release.xcconfig"; sourceTree = "<group>"; };
+		A9D7F09EAF614D12A89A2B5B /* Poppins-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Medium.ttf"; path = "../assets/fonts/Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		C04FE4CA207A4FA081FF1C2F /* Poppins-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Bold.ttf"; path = "../assets/fonts/Poppins-Bold.ttf"; sourceTree = "<group>"; };
 		CB242A25E55D4634A2FBB8B1 /* EduTASBeginner-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "EduTASBeginner-Regular.ttf"; path = "../assets/fonts/EduTASBeginner-Regular.ttf"; sourceTree = "<group>"; };
 		CD8EB81DE89B4678AB56EE72 /* EduTASBeginner-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "EduTASBeginner-Medium.ttf"; path = "../assets/fonts/EduTASBeginner-Medium.ttf"; sourceTree = "<group>"; };
+		D52AE6AEC7034066A8D7C506 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Regular.ttf"; path = "../assets/fonts/Poppins-Regular.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -130,6 +136,11 @@
 				CD8EB81DE89B4678AB56EE72 /* EduTASBeginner-Medium.ttf */,
 				CB242A25E55D4634A2FBB8B1 /* EduTASBeginner-Regular.ttf */,
 				057981E32CAC4ECC80074A82 /* EduTASBeginner-SemiBold.ttf */,
+				C04FE4CA207A4FA081FF1C2F /* Poppins-Bold.ttf */,
+				09B9A123A63941D8B865612E /* Poppins-Light.ttf */,
+				A9D7F09EAF614D12A89A2B5B /* Poppins-Medium.ttf */,
+				D52AE6AEC7034066A8D7C506 /* Poppins-Regular.ttf */,
+				157B33BFA3A8446F81DEC6E7 /* Poppins-SemiBold.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -328,10 +339,11 @@
 				3A79D9F52A13E4D900B03818 /* Feather.ttf in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				E0587B6A0210448E8A061108 /* EduTASBeginner-Bold.ttf in Resources */,
-				F65FF287AB2F4D5991B6FD3A /* EduTASBeginner-Medium.ttf in Resources */,
-				7375DCC8E3D74C7CB07BD542 /* EduTASBeginner-Regular.ttf in Resources */,
-				2CC182A2F2014B9D8EB6DC11 /* EduTASBeginner-SemiBold.ttf in Resources */,
+				DDAF53776C864BFDB23445CA /* Poppins-Bold.ttf in Resources */,
+				98390C6125994A2487C4C8EF /* Poppins-Light.ttf in Resources */,
+				63EECD1F9A334979ADA9BFAF /* Poppins-Medium.ttf in Resources */,
+				F1994C817AE643C5899937C9 /* Poppins-Regular.ttf in Resources */,
+				9B5269C88B794A0E97FE34BA /* Poppins-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

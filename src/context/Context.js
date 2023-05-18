@@ -35,7 +35,9 @@ const MainContextProvider = ({children}) => {
   }, []);
 
   const fetchBlogPosts = () => {
-    fetch(`https://www.lenasoftware.com/api/v1/en/maestro/1`)
+    fetch(
+      `https://www.lenasoftware.com/api/v1/en/maestro/1?page=1&count=${perCount}`,
+    )
       .then(response => response.json())
       .then(data => {
         setBlogPosts(data.result);

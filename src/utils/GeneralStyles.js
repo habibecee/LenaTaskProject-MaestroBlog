@@ -11,9 +11,6 @@ export const colors = {
   textSecondary: '#A393EB',
   textLast: '#7882A4',
 
-  borderDark: '#484C7F',
-  borderLight: '#F1D4D4',
-
   bgDark: '#424874',
   bgLight: '#A6B1E1',
 };
